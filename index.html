@@ -3,59 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SteadyPress Privacy Policy</title>
+  <title>SteadyPress — Dry-fire coach + live timer</title>
+  <meta name="description" content="Shooting practice on the phone you already carry. Dry fire at home (unloaded). Live fire is a timer only — phone off the line." />
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; margin: 1.25rem; color: #111; max-width: 48rem; }
-    h1 { font-size: 1.4rem; }
-    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
-    .warn { background: #b71c1c; color: #fff; padding: 0.75rem 1rem; border-radius: 6px; font-weight: 600; }
-    .warn-live { background: #e65100; color: #fff; padding: 0.75rem 1rem; border-radius: 6px; font-weight: 600; }
+    :root { --bg:#07090C; --card:#10141B; --text:#F4F1EA; --muted:#9AA3B2; --red:#B71C1C; --amber:#E65100; --accent:#C9A227; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    main { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.75rem; letter-spacing: .02em; margin: 1.25rem 0 .4rem; }
+    h2 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    .warn { background: var(--red); color:#fff; padding:.7rem 1rem; border-radius:8px; font-weight:700; margin:0 0 .6rem; }
+    .warn-live { background: var(--amber); color:#fff; padding:.7rem 1rem; border-radius:8px; font-weight:700; }
+    .card { background:var(--card); border:1px solid #222A38; border-radius:12px; padding:1rem 1.1rem; margin:1rem 0; }
+    a { color: var(--accent); }
+    .price { font-size: 1.15rem; font-weight: 700; }
+    footer { margin-top: 2.5rem; color: var(--muted); font-size: .9rem; }
   </style>
 </head>
 <body>
-  <p class="warn">DRY FIRE • Firearm must be unloaded. Muzzle never toward the phone.</p>
-  <p class="warn-live">LIVE FIRE • Phone off the firing line. Timer only. Never downrange.</p>
-  <h1>Privacy Policy — SteadyPress</h1>
-  <p><strong>Last updated:</strong> August 29, 2026</p>
-  <p>SteadyPress (“the App”) is a shooting-practice application. Dry fire uses the camera and microphone on-device for trigger-process feedback. Live fire uses the microphone (and optional watch) as a shot timer only — no camera, no hit scoring.</p>
-
-  <h2>Information We Process</h2>
-  <ul>
-    <li><strong>Camera frames</strong> (dry fire only) are processed <em>on-device</em> for pose estimation. Frames are not uploaded. Live fire does not use the camera.</li>
-    <li><strong>Microphone audio</strong> is processed <em>on-device</em> to time dry-fire clicks or live-fire reports. Audio is not permanently recorded or uploaded.</li>
-    <li><strong>Account</strong> (optional): Sign in with Google (Android), Sign in with Apple (iOS), or email. The App stores an identifier, email, and display name from that sign-in. Training works without an account.</li>
-    <li><strong>Purchases</strong>: Premium status via App Store / Google Play Billing. Practice (timer) is free; the coach is a paid subscription or lifetime unlock.</li>
-    <li><strong>Local history</strong>: session scores and labels on your device.</li>
-    <li><strong>Account sync (optional)</strong>: a small JSON of scores, timer strings, and personal bests in <em>your</em> iCloud private database or Google Drive app-data folder. No video, audio, or pose clips. Off in Settings. Uninstall does not delete the cloud snapshot; delete it from iCloud / Google account storage.</li>
-  </ul>
-
-  <h2>Data Collection Mode (optional)</h2>
-  <p>If you enable Settings → Collect Training Data, the App may save pose landmark coordinates, click timing, and labels you choose. Not video or audio files. Stored only on-device; excluded from cloud backup; never uploaded unless you explicitly export.</p>
-
-  <h2>How We Use Information</h2>
-  <ul>
-    <li>Shot timing and (dry fire) on-device form feedback.</li>
-    <li>Premium subscription / lifetime unlock.</li>
-    <li>Optional on-device personalization of feedback baselines.</li>
-  </ul>
-
-  <h2>Sharing</h2>
-  <p>We do not sell personal data. Third parties only when you use their services: Sign in with Apple, Google Sign-In (including Google Drive app-data if you turn on training save), App Store, and Google Play Billing.</p>
-
-  <h2>Permissions</h2>
-  <ul>
-    <li><strong>Camera</strong> — dry-fire pose / finger analysis. Not used in live fire.</li>
-    <li><strong>Microphone</strong> — click or shot timing on-device.</li>
-    <li><strong>Internet</strong> — optional sign-in, billing, optional account snapshot, watch companion. Core training works offline after install. No advertising ID.</li>
-  </ul>
-
-  <h2>Safety</h2>
-  <p>Dry fire: unloaded firearm only. Live fire: timer only; phone off the line; never downrange. Users are solely responsible for safe firearm handling. The App does not replace a range officer or professional instruction.</p>
-
-  <h2>Contact</h2>
-  <p><a href="mailto:support@steadypress.app">support@steadypress.app</a></p>
-
-  <h2>Changes</h2>
-  <p>We may update this policy. Continued use after changes constitutes acceptance.</p>
+  <main>
+    <p class="warn">DRY FIRE • Firearm must be unloaded. Muzzle never toward the phone.</p>
+    <p class="warn-live">LIVE FIRE • Phone off the firing line. Timer only. Never downrange.</p>
+    <h1>SteadyPress</h1>
+    <p class="muted">Dry-fire coach + live timer. Unloaded at home. Phone off the line.</p>
+    <div class="card">
+      <p>Shooting practice on the phone you already carry.</p>
+      <ul>
+        <li><strong>Dry fire:</strong> left-side camera + click diagnosis. Mandatory unloaded checklist.</li>
+        <li><strong>Live fire:</strong> pocket shot timer + log. No camera. No hit scoring.</li>
+        <li>Pro timer: random delay, start/par beep, DTF, splits.</li>
+      </ul>
+      <p class="price">Practice is free. The coach is $49 a year.</p>
+      <p class="muted">7-day trial. $6.99/mo or $99 lifetime. Timer, Week 1, and last 10 sessions stay free.</p>
+    </div>
+    <h2>Get the app</h2>
+    <p>Android: Google Play (coming with 1.0.0 internal testing).<br />iPhone: App Store via TestFlight after Play testers.</p>
+    <h2>Legal</h2>
+    <p><a href="/privacy.html">Privacy Policy</a></p>
+    <footer>
+      Contact: <a href="mailto:support@getsteadypress.com">support@getsteadypress.com</a>
+    </footer>
+  </main>
 </body>
 </html>
